@@ -1,6 +1,6 @@
 body {
-  background-color: #d3d3d3;
   margin: 0;
+  background-color: #f8eded;
 }
 
 header {
@@ -10,6 +10,8 @@ header {
   align-items: center;
   margin: 0 auto;
   flex-direction: column;
+  position: sticky;
+  top: 0;
 }
 
 .header-div {
@@ -52,6 +54,10 @@ header {
   padding-left: 6px;
 }
 
+.desktop-navbar {
+  display: none;
+}
+
 .body1 {
   width: 375px;
   height: 554px;
@@ -66,7 +72,9 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   margin: 0 auto;
+  margin-bottom: 150px;
   background-color: white;
+  border-radius: 0 0 0 150px;
 }
 
 .intro-para {
@@ -90,7 +98,7 @@ header {
   line-height: 24px;
   text-align: left;
   color: #344563;
-  margin: 10px 0;
+  margin: 10px 0 20px 0;
 }
 
 .contact {
@@ -126,13 +134,14 @@ header {
   width: 375px;
   height: 554px;
   top: 92px;
-  padding: 114px 24px 0 24px;
+  padding: 0 24px 0 24px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: left;
   margin: 0 auto;
+  margin-top: 114px;
   background-color: white;
 }
 
@@ -141,7 +150,6 @@ header {
   height: 220px;
   gap: 0;
   border-radius: 8px 0 0 0;
-  opacity: 1;
 }
 
 .tonic-description {
@@ -346,6 +354,20 @@ header {
   color: #396df2;
 }
 
+.body2 {
+  width: 375px;
+  height: 384px;
+  top: 92px;
+  padding: 114px 24px 0 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
+  margin: 0 auto;
+  background-color: white;
+}
+
 .about-me {
   width: 327px;
   height: 35px;
@@ -356,6 +378,18 @@ header {
   text-align: left;
   color: #172b4d;
   margin: 10px 0 10px 0;
+}
+
+.description2 {
+  width: 327px;
+  height: 146px;
+  font-family: Poppins, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: left;
+  color: #344563;
+  margin: 10px 0 20px 0;
 }
 
 .get-resume-aside {
@@ -390,23 +424,8 @@ header {
   color: #396df2;
 }
 
-.body2 {
-  width: 375px;
-  height: 384px;
-  top: 92px;
-  padding: 114px 24px 0 24px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  text-align: left;
-  margin: 0 auto;
-  background-color: white;
-}
-
 .skill-list {
   width: 375px;
-  height: 464.15px;
   padding: 10px 24px 100px 24px;
   background-color: white;
   margin: 0 auto;
@@ -567,4 +586,266 @@ header {
   line-height: 24px;
   letter-spacing: 0.03em;
   text-align: center;
+}
+
+@media (min-width: 378px) {
+  header {
+    width: 100%;
+    height: 72px;
+  }
+
+  .header-div {
+    width: 1440px;
+    height: 72px;
+    padding: 16px;
+    box-sizing: border-box;
+  }
+
+  .intro-body {
+    width: 100%;
+  }
+
+  .logo {
+    padding: 0 0 0 143px;
+  }
+
+  .dropdown-logo {
+    display: none;
+  }
+
+  .desktop-navbar {
+    display: flex;
+    width: 258px;
+    height: 40px;
+    top: 16px;
+    left: 1039px;
+    gap: 8px;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 150px;
+  }
+
+  .desktop-navbar a {
+    text-decoration: none;
+    width: 86px;
+    height: 40px;
+    padding: 10px 12px;
+    gap: 10px;
+  }
+
+  .desktop-navbar p {
+    width: 62px;
+    height: 20px;
+    font-family: Poppins, sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: center;
+    color: #344563;
+  }
+
+  .body1 {
+    width: 1440px;
+    height: 846px;
+    top: 71px;
+    padding: 289px 260px 289px 260px;
+    background-image: url("Icons/background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    box-sizing: border-box;
+  }
+
+  .intro-para {
+    width: 500px;
+    height: 122px;
+    font-size: 48px;
+    line-height: 60px;
+    letter-spacing: 0.3700000047683716px;
+  }
+
+  .description {
+    width: 920px;
+    height: 98px;
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .main-body {
+    width: 100%;
+  }
+
+  .tonic {
+    width: 1156px;
+    height: 496px;
+    display: grid;
+    grid-template: 496px / 50% 50%;
+    gap: 24px;
+    border-radius: 20px;
+  }
+
+  .snapshot {
+    width: 544px;
+    height: 448px;
+    border-radius: 8px 0 0 0;
+  }
+
+  .tonic-description {
+    width: 544px;
+    height: 465px;
+    padding: 24px 24px;
+  }
+
+  .tonic-heading {
+    width: 496px;
+    height: 98px;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+
+  .tonic-heading-1 {
+    width: 496px;
+    height: 46px;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .tonic-heading-2 {
+    width: 320px;
+    height: 40px;
+    gap: 12px;
+  }
+
+  .canopy {
+    width: 80px;
+    height: 24px;
+    padding: 8px 0;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+  }
+
+  .back-end-div {
+    width: 122px;
+    height: 40px;
+    padding: 8px 0;
+  }
+
+  .back-end-para {
+    width: 122px;
+    height: 24px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .year {
+    width: 38px;
+    height: 24px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+  }
+
+  .tonic-info-para {
+    width: 496px;
+    height: 70px;
+    font-size: 16px;
+  }
+
+  .intro-body2 {
+    width: 1440px;
+    height: 924px;
+    top: 4535px;
+    left: 1440px;
+    display: grid;
+    grid-template: 100% / 40% 40%;
+    justify-content: left;
+    align-items: center;
+    background-color: white;
+    border-radius: 0 150px 0 0;
+    margin-top: 150px;
+  }
+
+  .body2 {
+    width: 447px;
+    height: 311px;
+    top: 3777px;
+    left: 143px;
+    gap: 24px;
+  }
+
+  .about-me {
+    width: 447px;
+    height: 33px;
+    padding-bottom: 15px;
+  }
+
+  .description2 {
+    width: 447px;
+    height: 102px;
+  }
+
+  .skill-list {
+    width: 684px;
+    height: 360px;
+    padding-left: 0;
+  }
+
+  .grid {
+    width: 684px;
+    height: 72px;
+    padding: 16px 26px;
+  }
+
+  .grid-language {
+    width: 122px;
+    height: 100px;
+    border-radius: 8px;
+    display: inline-block;
+    margin: 10px 10px 0 0;
+  }
+
+  .form-outer-section {
+    width: 1440px;
+    height: 846px;
+    margin: 0;
+  }
+
+  .form-page {
+    width: 1440px;
+    height: 846px;
+    background-image: url("Icons/contact\ form\ background\ shapes@2x.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #6070ff;
+    border-radius: 150px 0 0 0;
+    padding: 0;
+  }
+
+  .form {
+    width: 801px;
+    height: 577px;
+    gap: 12px;
+    background-image: none;
+    margin: 0;
+  }
+
+  .info-para {
+    width: 569px;
+    height: 102px;
+  }
+
+  .name,
+  .email {
+    width: 447px;
+    height: 48px;
+    border-radius: 0;
+  }
+
+  .message {
+    width: 447px;
+    height: 170px;
+    border-radius: 0;
+  }
 }
